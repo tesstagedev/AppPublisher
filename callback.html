@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OAuth Callback</title>
+</head>
+<body>
+  <h1>Callback TikTok</h1>
+  <p id="code"></p>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("code").textContent = "Code OAuth2: " + params.get("code");
+  </script>
+</body>
+</html>
